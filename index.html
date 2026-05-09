@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" type="image/png" href="favicon.ico">
+<title>Demolition Long Island — Trusted Demolition Experts on Long Island</title>
+<script src="https://tracking-params.pages.dev/persist-url-params.min.js"></script>
+<script>var $wc_load=function(a){return JSON.parse(JSON.stringify(a))},$wc_leads=$wc_leads||{doc:{url:$wc_load(document.URL),ref:$wc_load(document.referrer),search:$wc_load(location.search),hash:$wc_load(location.hash)}};</script> <script src="//s.ksrndkehqnwntyxlhgto.com/162191.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+/* ──────────────────────────────────────────
+   TOKENS
+────────────────────────────────────────── */
+:root {
+  --ink:       #00152f;
+  --ink-60:    rgba(0,21,47,.6);
+  --ink-30:    rgba(0,21,47,.3);
+  --fire:      #f5a524;
+  --fire-d:    #d18a13;
+  --fire-glow: rgba(245,165,36,.18);
+  --sand:      #F8F9FA;
+  --line:      #E9ECEF;
+  --white:     #FFFFFF;
+  --star:      #ffcc00;
+  --r:         12px;
+  --t:         .2s ease;
+  --max:       1360px;
+}
+
+/* ──────────────────────────────────────────
+   BASE
+────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+/* ──────────────────────────────────────────
+   UTILITY
+────────────────────────────────────────── */
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 48px; }
+.tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--fire); padding: 5px 12px;
+  background: var(--fire-glow); border-radius: 100px;
+}
+.tag svg { width: 10px; height: 10px; fill: var(--fire); flex-shrink: 0; }
+
+/* ──────────────────────────────────────────
+   TOPBAR
+────────────────────────────────────────── */
+.topbar {
+  background: var(--ink);
+  color: rgba(255,255,255,.7);
+  font-size: 13px; font-weight: 500;
+  text-align: center; padding: 10px 24px;
+  position: sticky; top: 0; z-index: 99;
+  letter-spacing: .01em;
+}
+.topbar a {
+  color: #fff; font-weight: 700;
+  border-bottom: 1px solid var(--fire); padding-bottom: 1px;
+  margin: 0 4px;
+}
+
+/* ──────────────────────────────────────────
+   NAV
+────────────────────────────────────────── */
+.nav {
+  background: rgba(255,255,255,.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 37px; z-index: 98;
+  padding: 0 48px;
+}
+.nav-inner {
+  max-width: var(--max); margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px;
+}
+.logo {
+  display: flex; align-items: center; gap: 14px;
+  flex-shrink: 0;
+}
+.tr-logo-img { height: 48px; width: auto; }
+.nav-phone {
+  display: flex; flex-direction: column; align-items: flex-end; gap: 1px;
+}
+.nav-phone small { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-60); }
+.nav-phone a {
+  font-size: 22px; font-weight: 700; color: var(--ink);
+  display: flex; align-items: center; gap: 7px;
+  transition: color var(--t);
+}
+.nav-phone a:hover { color: var(--fire); }
+.nav-phone a svg { width: 18px; height: 18px; stroke: var(--fire); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.btn-nav {
+  background: var(--fire); color: #fff;
+  font-size: 14px; font-weight: 700;
+  padding: 12px 24px; border-radius: 8px;
+  transition: background var(--t), transform var(--t);
+  white-space: nowrap; flex-shrink: 0;
+}
+.btn-nav:hover { background: var(--fire-d); transform: translateY(-1px); }
+
+/* ──────────────────────────────────────────
+   HERO
+────────────────────────────────────────── */
+.hero {
+  background: var(--ink);
+  color: #fff;
+  padding: 100px 48px 64px;
+  overflow: hidden;
+  position: relative;
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(0,21,47,.82);
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 700px; height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245,165,36,.22) 0%, transparent 70%);
+  right: -100px; top: -200px;
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: var(--max); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 460px;
+  gap: 80px; align-items: start;
+  position: relative; z-index: 1;
+}
+.hero-left { padding-bottom: 0; }
+
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em;
+  color: rgba(255,255,255,.5);
+  margin-bottom: 28px;
+}
+.hero-tag .live-dot {
+  width: 7px; height: 7px; border-radius: 50%; background: #4ade80;
+  box-shadow: 0 0 0 2px rgba(74,222,128,.3);
+  animation: ping 2s ease infinite;
+}
+@keyframes ping {
+  0%, 100% { box-shadow: 0 0 0 2px rgba(74,222,128,.3); }
+  50%       { box-shadow: 0 0 0 5px rgba(74,222,128,.1); }
+}
+
+.hero-h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 5.5vw, 80px);
+  font-weight: 900; line-height: 1.05;
+  margin-bottom: 24px;
+  letter-spacing: -.02em;
+}
+.hero-h1 .keyword {
+  color: var(--fire);
+  font-style: italic;
+  display: block;
+}
+
+.hero-sub {
+  font-size: 18px; line-height: 1.75;
+  color: rgba(255,255,255,.6);
+  max-width: 520px; margin-bottom: 40px;
+  font-weight: 400;
+}
+.hero-trust {
+  display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.ht-item {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 600; color: rgba(255,255,255,.6);
+}
+.ht-item svg {
+  width: 16px; height: 16px; flex-shrink: 0;
+  stroke: var(--fire); fill: none;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.ht-sep { width: 1px; height: 16px; background: rgba(255,255,255,.15); }
+
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-fire {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--fire); color: #fff;
+  font-size: 16px; font-weight: 700;
+  padding: 17px 32px; border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(245,165,36,.4);
+  transition: background var(--t), transform var(--t), box-shadow var(--t);
+}
+.btn-fire:hover { background: var(--fire-d); transform: translateY(-2px); box-shadow: 0 14px 40px rgba(245,165,36,.5); }
+.btn-fire svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.btn-ghost-white {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: transparent; color: rgba(255,255,255,.8);
+  font-size: 16px; font-weight: 600;
+  padding: 17px 28px; border-radius: 10px;
+  border: 1.5px solid rgba(255,255,255,.2);
+  transition: border-color var(--t), color var(--t), background var(--t);
+}
+.btn-ghost-white:hover { border-color: rgba(255,255,255,.5); color: #fff; background: rgba(255,255,255,.06); }
+.btn-ghost-white svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ── HERO FORM CARD ── */
+.hero-card {
+  background: #fff; color: var(--ink);
+  border-radius: 20px;
+  padding: 36px 32px 32px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.45);
+  position: relative; z-index: 2;
+  margin-top: 8px;
+}
+.hc-eyebrow {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--fire); margin-bottom: 6px;
+}
+.hc-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px; font-weight: 700;
+  color: var(--ink); margin-bottom: 24px; line-height: 1.2;
+}
+
+.hc-field { margin-bottom: 14px; }
+.hc-field label {
+  display: block; font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .08em;
+  color: var(--ink-60); margin-bottom: 7px;
+}
+.hc-input-row {
+  display: flex; align-items: center;
+  border: 1.5px solid var(--line); border-radius: 10px;
+  overflow: hidden; background: var(--sand);
+  transition: border-color var(--t), background var(--t);
+}
+.hc-input-row:focus-within { border-color: var(--fire); background: #fff; }
+.hc-icon {
+  width: 48px; height: 50px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  border-right: 1.5px solid var(--line);
+}
+.hc-icon svg {
+  width: 18px; height: 18px;
+  stroke: var(--ink-30); fill: none;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.hc-input-row:focus-within .hc-icon svg { stroke: var(--fire); }
+.hc-input-row input {
+  flex: 1; padding: 0 16px; height: 50px; border: none; outline: none;
+  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px;
+  color: var(--ink); background: transparent;
+}
+.hc-input-row input::placeholder { color: var(--ink-30); }
+.hc-row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.hc-row2 .hc-field { min-width: 0; }
+.hc-row2 .hc-input-row { min-width: 0; }
+.hc-row2 .hc-input-row input { min-width: 0; }
+
+.btn-hc-submit {
+  width: 100%; background: var(--fire); color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 17px; font-weight: 700;
+  padding: 17px; border-radius: 10px;
+  margin-top: 8px;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  transition: background var(--t), transform var(--t);
+  box-shadow: 0 6px 24px rgba(245,165,36,.35);
+}
+.btn-hc-submit:hover { background: var(--fire-d); transform: translateY(-1px); }
+.btn-hc-submit svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.hc-note {
+  font-size: 11px; color: var(--ink-30); text-align: center;
+  margin-top: 12px; line-height: 1.6;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+.hc-note svg { width: 12px; height: 12px; stroke: var(--ink-30); fill: none; stroke-width: 2; flex-shrink: 0; }
+
+/* ──────────────────────────────────────────
+   PROMO BANNER
+────────────────────────────────────────── */
+.promo-strip {
+  background: linear-gradient(135deg, var(--ink) 0%, #0a2a52 100%);
+  padding: 20px 48px;
+  text-align: center;
+}
+.promo-strip-inner {
+  max-width: var(--max); margin: 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  gap: 40px; flex-wrap: wrap;
+}
+.promo-item {
+  display: flex; align-items: center; gap: 10px;
+  color: #fff; font-size: 15px; font-weight: 600;
+}
+.promo-badge {
+  background: var(--fire);
+  color: #fff; font-size: 13px; font-weight: 800;
+  padding: 4px 12px; border-radius: 6px;
+  white-space: nowrap;
+}
+.promo-sep { width: 1px; height: 24px; background: rgba(255,255,255,.15); }
+
+/* ──────────────────────────────────────────
+   SOCIAL PROOF STRIP
+────────────────────────────────────────── */
+.proof-strip {
+  background: var(--sand);
+  border-bottom: 1px solid var(--line);
+}
+.proof-strip-inner {
+  max-width: var(--max); margin: 0 auto; padding: 0 48px;
+  display: flex; align-items: stretch;
+}
+.ps-item {
+  flex: 1; display: flex; align-items: center; gap: 12px;
+  padding: 22px 24px;
+  border-right: 1px solid var(--line);
+  transition: background var(--t);
+}
+.ps-item:last-child { border-right: none; }
+.ps-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  background: #fff; border: 1.5px solid var(--line);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.ps-icon svg {
+  width: 20px; height: 20px;
+  stroke: var(--fire); fill: none;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.ps-label { font-size: 13px; font-weight: 700; color: var(--ink); line-height: 1.3; }
+.ps-sub { font-size: 11px; color: var(--ink-60); margin-top: 1px; }
+
+/* ──────────────────────────────────────────
+   WHY US
+────────────────────────────────────────── */
+.why-sec {
+  padding: 96px 48px;
+  background: var(--sand);
+}
+.why-head {
+  max-width: var(--max); margin: 0 auto 64px;
+  display: flex; align-items: flex-end; justify-content: space-between; gap: 32px;
+}
+.why-head-left .tag { margin-bottom: 16px; }
+.why-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 900; line-height: 1.1; letter-spacing: -.02em;
+}
+.why-h2 em { color: var(--fire); font-style: italic; }
+.why-head-right {
+  font-size: 15px; color: var(--ink-60); max-width: 380px;
+  line-height: 1.75; font-weight: 400;
+  flex-shrink: 0;
+}
+.why-grid {
+  max-width: var(--max); margin: 0 auto;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 2px; background: var(--line); border-radius: 16px; overflow: hidden;
+}
+.why-card {
+  background: #fff; padding: 40px 32px;
+  transition: background var(--t), box-shadow var(--t);
+  position: relative;
+  overflow: hidden;
+}
+.why-card::before {
+  content: '';
+  position: absolute; top: -40px; right: -40px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245,165,36,.08) 0%, transparent 70%);
+  pointer-events: none;
+  transition: opacity .3s ease, transform .3s ease;
+}
+.why-card::after {
+  content: '';
+  position: absolute; bottom: -20px; left: -20px;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245,165,36,.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+.why-card:hover { background: var(--sand); }
+.why-card:hover::before {
+  opacity: 1;
+  transform: scale(1.4);
+  background: radial-gradient(circle, rgba(245,165,36,.14) 0%, transparent 70%);
+}
+.wc-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px; font-weight: 900; line-height: 1;
+  color: var(--fire-glow); margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--fire) 0%, rgba(245,165,36,.15) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative; z-index: 1;
+}
+.wc-icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  background: var(--sand);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+  position: relative; z-index: 1;
+}
+.wc-title, .wc-body { position: relative; z-index: 1; }
+.wc-icon svg {
+  width: 24px; height: 24px;
+  stroke: var(--ink); fill: none;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.wc-title { font-size: 17px; font-weight: 700; margin-bottom: 10px; line-height: 1.3; }
+.wc-body { font-size: 14px; color: var(--ink-60); line-height: 1.75; }
+
+/* ──────────────────────────────────────────
+   REVIEWS
+────────────────────────────────────────── */
+.reviews-sec { padding: 96px 48px; background: var(--white); }
+.reviews-head {
+  max-width: var(--max); margin: 0 auto 56px;
+  display: flex; align-items: flex-end; justify-content: space-between; gap: 32px;
+}
+.reviews-head .tag { margin-bottom: 14px; }
+.reviews-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 900; line-height: 1.1; letter-spacing: -.02em;
+}
+.reviews-h2 em { color: var(--fire); font-style: italic; }
+.reviews-overall {
+  display: flex; align-items: center; gap: 16px; flex-shrink: 0;
+}
+.rev-big-score {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px; font-weight: 900; line-height: 1; color: var(--ink);
+}
+.rev-big-right { display: flex; flex-direction: column; gap: 4px; }
+.rev-stars-row { display: flex; gap: 3px; }
+.rev-stars-row svg { width: 16px; height: 16px; fill: var(--star); }
+.rev-count { font-size: 12px; color: var(--ink-60); font-weight: 500; }
+
+.reviews-grid {
+  max-width: var(--max); margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.rev-card {
+  padding: 32px; border-radius: 16px;
+  background: var(--sand); border: 1.5px solid var(--line);
+  display: flex; flex-direction: column;
+  transition: border-color var(--t), box-shadow var(--t), transform var(--t);
+}
+.rev-card:hover { border-color: var(--fire); box-shadow: 0 8px 40px rgba(245,165,36,.08); transform: translateY(-3px); }
+.rev-stars { display: flex; gap: 3px; margin-bottom: 16px; }
+.rev-stars svg { width: 15px; height: 15px; fill: var(--star); }
+.rev-quote { font-size: 15px; color: var(--ink-60); line-height: 1.8; flex: 1; margin-bottom: 24px; font-style: italic; }
+.rev-bottom { display: flex; align-items: center; gap: 12px; }
+.rev-av {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--ink); color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.rev-name { font-size: 14px; font-weight: 700; }
+.rev-meta { font-size: 11px; color: var(--ink-60); margin-top: 2px; }
+
+/* ──────────────────────────────────────────
+   MAP
+────────────────────────────────────────── */
+.map-sec { padding: 96px 48px; background: var(--ink); color: #fff; }
+.map-inner { max-width: var(--max); margin: 0 auto; }
+.map-head {
+  display: flex; align-items: flex-end; justify-content: space-between; gap: 32px;
+  margin-bottom: 56px;
+}
+.map-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--fire); padding: 5px 12px;
+  background: rgba(245,165,36,.15); border-radius: 100px; margin-bottom: 16px;
+}
+.map-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 900; line-height: 1.1; letter-spacing: -.02em;
+}
+.map-h2 em { color: var(--fire); font-style: italic; }
+.map-layout {
+  display: grid; grid-template-columns: 1fr 340px; gap: 40px; align-items: start;
+}
+.map-frame {
+  border-radius: 16px; overflow: hidden;
+  aspect-ratio: 16/9;
+  border: 1.5px solid rgba(255,255,255,.1);
+  box-shadow: 0 24px 80px rgba(0,0,0,.5);
+}
+.map-frame iframe { width: 100%; height: 100%; display: block; border: none; }
+.map-sidebar { display: flex; flex-direction: column; gap: 8px; }
+.map-sidebar-title {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: rgba(255,255,255,.35); margin-bottom: 8px; padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.map-city {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 16px; border-radius: 10px;
+  font-size: 14px; font-weight: 500; color: rgba(255,255,255,.7);
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.07);
+  transition: background var(--t), color var(--t), border-color var(--t);
+}
+.map-city:hover { background: rgba(255,255,255,.08); color: #fff; border-color: rgba(255,255,255,.15); }
+.map-city-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--fire); flex-shrink: 0; }
+
+/* ──────────────────────────────────────────
+   FAQ
+────────────────────────────────────────── */
+.faq-sec { padding: 96px 48px; background: var(--white); }
+.faq-inner { max-width: var(--max); margin: 0 auto; }
+.faq-head {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
+  margin-bottom: 56px;
+}
+.faq-head-left .tag { margin-bottom: 16px; }
+.faq-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 900; line-height: 1.1; letter-spacing: -.02em;
+  margin-bottom: 16px;
+}
+.faq-h2 em { color: var(--fire); font-style: italic; }
+.faq-head-right {
+  font-size: 15px; color: var(--ink-60); line-height: 1.8; padding-top: 8px;
+}
+.faq-head-right a {
+  color: var(--fire); font-weight: 600; border-bottom: 1px solid var(--fire-glow);
+  transition: border-color var(--t);
+}
+.faq-head-right a:hover { border-color: var(--fire); }
+
+.faq-list { display: flex; flex-direction: column; gap: 2px; background: var(--line); border-radius: 16px; overflow: hidden; }
+.faq-item { background: #fff; }
+.faq-btn {
+  width: 100%; text-align: left;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  padding: 24px 32px; cursor: pointer;
+  font-size: 16px; font-weight: 600; color: var(--ink);
+  transition: background var(--t), color var(--t);
+}
+.faq-btn:hover { background: var(--sand); }
+.faq-item.open .faq-btn { background: var(--sand); color: var(--fire); }
+.faq-toggle {
+  width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+  background: var(--sand);
+  display: flex; align-items: center; justify-content: center;
+  transition: background var(--t), transform var(--t);
+}
+.faq-item.open .faq-toggle { background: var(--fire); transform: rotate(45deg); }
+.faq-toggle svg {
+  width: 12px; height: 12px;
+  stroke: var(--ink); fill: none; stroke-width: 2.5; stroke-linecap: round;
+  transition: stroke var(--t);
+}
+.faq-item.open .faq-toggle svg { stroke: #fff; }
+.faq-ans {
+  padding: 0 32px; max-height: 0; overflow: hidden;
+  font-size: 15px; color: var(--ink-60); line-height: 1.8;
+  transition: max-height .35s ease, padding .35s ease;
+}
+.faq-item.open .faq-ans { display: block !important; max-height: 500px !important; padding: 0 32px 24px !important; opacity: 1 !important; }
+.faq-item.open .faq-toggle { transform: rotate(45deg); }
+.faq-item.open .faq-btn { color: var(--fire); }
+
+/* ──────────────────────────────────────────
+   FOOTER FORM
+────────────────────────────────────────── */
+.footer-form-sec { padding: 96px 48px 96px; background: var(--sand); }
+.ff-outer {
+  max-width: var(--max); margin: 0 auto;
+  background: var(--ink); border-radius: 24px;
+  padding: 72px 80px;
+  position: relative; overflow: hidden;
+  display: grid; grid-template-columns: 1fr minmax(0, 540px); gap: 80px; align-items: start;
+}
+.ff-outer::before {
+  content: '';
+  position: absolute; left: -100px; bottom: -100px;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(245,165,36,.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.ff-left { position: relative; z-index: 1; color: #fff; }
+.ff-eyebrow {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--fire); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 8px;
+}
+.ff-eyebrow::before { content: ''; width: 24px; height: 2px; background: var(--fire); border-radius: 1px; }
+.ff-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 900; line-height: 1.1; letter-spacing: -.02em;
+  margin-bottom: 20px;
+}
+.ff-h2 em { color: var(--fire); font-style: italic; }
+.ff-body { font-size: 16px; color: rgba(255,255,255,.5); line-height: 1.8; margin-bottom: 40px; }
+.ff-contact-items { display: flex; flex-direction: column; gap: 20px; }
+.ff-ci { display: flex; align-items: center; gap: 14px; }
+.ff-ci-icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  background: rgba(255,255,255,.07); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.ff-ci-icon svg {
+  width: 20px; height: 20px;
+  stroke: var(--fire); fill: none;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.ff-ci-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: rgba(255,255,255,.35); margin-bottom: 3px; }
+.ff-ci-val { font-size: 16px; font-weight: 700; color: #fff; }
+.ff-ci-val a { color: #fff; transition: color var(--t); }
+.ff-ci-val a:hover { color: var(--fire); }
+
+.ff-right { position: relative; z-index: 1; min-width: 0; }
+.ff-form-card {
+  background: #fff; border-radius: 20px;
+  padding: 40px 36px;
+  max-width: 100%; box-sizing: border-box;
+}
+.ff-form-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 700; color: var(--ink);
+  margin-bottom: 6px;
+}
+.ff-form-sub { font-size: 13px; color: var(--ink-60); margin-bottom: 28px; }
+
+.ff-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ff-field { margin-bottom: 12px; }
+.ff-field.full { grid-column: 1 / -1; }
+.ff-field label {
+  display: block; font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .08em;
+  color: var(--ink-60); margin-bottom: 6px;
+}
+.ff-inp-row {
+  display: flex; align-items: center;
+  border: 1.5px solid var(--line); border-radius: 10px; overflow: hidden;
+  background: var(--sand); transition: border-color var(--t), background var(--t);
+}
+.ff-inp-row:focus-within { border-color: var(--fire); background: #fff; }
+.ff-inp-icon {
+  width: 44px; height: 46px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  border-right: 1.5px solid var(--line);
+}
+.ff-inp-icon svg {
+  width: 17px; height: 17px;
+  stroke: var(--ink-30); fill: none;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.ff-inp-row:focus-within .ff-inp-icon svg { stroke: var(--fire); }
+.ff-inp-row input {
+  flex: 1; padding: 0 14px; height: 46px; border: none; outline: none;
+  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px;
+  color: var(--ink); background: transparent;
+}
+.ff-inp-row input::placeholder { color: var(--ink-30); }
+
+.btn-ff {
+  width: 100%; background: var(--fire); color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px; font-weight: 700;
+  padding: 17px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  margin-top: 6px;
+  box-shadow: 0 6px 24px rgba(245,165,36,.35);
+  transition: background var(--t), transform var(--t);
+}
+.btn-ff:hover { background: var(--fire-d); transform: translateY(-1px); }
+.btn-ff svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.ff-disc { font-size: 11px; color: var(--ink-30); text-align: center; margin-top: 12px; line-height: 1.6; }
+
+/* ──────────────────────────────────────────
+   FOOTER
+────────────────────────────────────────── */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,.3);
+  padding: 28px 48px; font-size: 13px;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+footer strong { color: rgba(255,255,255,.6); }
+footer a { color: var(--fire); }
+
+/* ── CTA PHONE STRIP ── */
+.cta-strip {
+  background: var(--fire);
+  padding: 28px 48px;
+  text-align: center;
+}
+.cta-strip-inner {
+  max-width: var(--max); margin: 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  gap: 20px; flex-wrap: wrap;
+}
+.cta-strip-text {
+  font-size: 17px; font-weight: 600; color: #fff;
+}
+.cta-strip-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #fff; color: var(--ink);
+  font-size: 18px; font-weight: 800;
+  padding: 14px 28px; border-radius: 10px;
+  transition: transform var(--t), box-shadow var(--t);
+  text-decoration: none;
+}
+.cta-strip-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+.cta-strip-btn svg { width: 20px; height: 20px; stroke: var(--fire); fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.cta-strip.dark { background: var(--ink); }
+.cta-strip.dark .cta-strip-btn { background: var(--fire); color: #fff; }
+.cta-strip.dark .cta-strip-btn svg { stroke: #fff; }
+
+/* ── SERVICES SECTION ── */
+.services-sec { padding: 96px 48px; background: var(--sand); }
+.services-inner { max-width: var(--max); margin: 0 auto; }
+.services-head { text-align: center; margin-bottom: 56px; }
+.services-head .tag { margin-bottom: 16px; }
+.services-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 900; line-height: 1.1; letter-spacing: -.02em;
+  margin-bottom: 16px;
+}
+.services-h2 em { color: var(--fire); font-style: italic; }
+.services-sub { font-size: 16px; color: var(--ink-60); max-width: 560px; margin: 0 auto; line-height: 1.75; }
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.svc-card {
+  background: #fff; border-radius: 16px; padding: 36px 28px;
+  border: 1.5px solid var(--line);
+  transition: border-color var(--t), box-shadow var(--t), transform var(--t);
+  position: relative; overflow: hidden;
+}
+.svc-card::before {
+  content: '';
+  position: absolute; top: -50px; right: -50px;
+  width: 160px; height: 160px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(245,165,36,.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.svc-card:hover { border-color: var(--fire); box-shadow: 0 8px 40px rgba(245,165,36,.08); transform: translateY(-3px); }
+.svc-icon {
+  width: 52px; height: 52px; border-radius: 12px;
+  background: var(--fire-glow);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px; position: relative; z-index: 1;
+}
+.svc-icon svg {
+  width: 26px; height: 26px;
+  stroke: var(--fire); fill: none;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.svc-title { font-size: 18px; font-weight: 700; margin-bottom: 10px; position: relative; z-index: 1; }
+.svc-body { font-size: 14px; color: var(--ink-60); line-height: 1.75; position: relative; z-index: 1; }
+
+/* ── PROCESS SECTION ── */
+.process-sec { padding: 96px 48px; background: var(--ink); color: #fff; }
+.process-inner { max-width: var(--max); margin: 0 auto; }
+.process-head { text-align: center; margin-bottom: 64px; }
+.process-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--fire); padding: 5px 12px;
+  background: rgba(245,165,36,.15); border-radius: 100px; margin-bottom: 16px;
+}
+.process-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 900; line-height: 1.1; letter-spacing: -.02em;
+}
+.process-h2 em { color: var(--fire); font-style: italic; }
+.process-steps {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
+  position: relative;
+}
+.process-steps::before {
+  content: '';
+  position: absolute; top: 32px; left: 10%; right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(245,165,36,.3), rgba(245,165,36,.3), transparent);
+  pointer-events: none;
+}
+.p-step { text-align: center; position: relative; z-index: 1; }
+.p-step-num {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: rgba(245,165,36,.15);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px; font-weight: 900; color: var(--fire);
+}
+.p-step-title { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+.p-step-body { font-size: 14px; color: rgba(255,255,255,.5); line-height: 1.7; }
+
+/* ── INLINE FORM SUCCESS ── */
+.form-success {
+  text-align: center; padding: 32px 16px;
+}
+.form-success-ring {
+  width: 60px; height: 60px; border-radius: 50%;
+  background: var(--fire-glow); margin: 0 auto 16px;
+  display: flex; align-items: center; justify-content: center;
+}
+.form-success-ring svg { width: 28px; height: 28px; stroke: var(--fire); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.form-success h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 900; margin-bottom: 8px;
+}
+.form-success p { font-size: 14px; color: var(--ink-60); max-width: 300px; margin: 0 auto 20px; line-height: 1.7; }
+.form-success .btn-call {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--ink); color: #fff;
+  font-size: 16px; font-weight: 700;
+  padding: 14px 28px; border-radius: 10px;
+  text-decoration: none;
+}
+.form-success .btn-call svg { width: 16px; height: 16px; stroke: var(--fire); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ──────────────────────────────────────────
+   RESPONSIVE
+────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .ff-outer { grid-template-columns: minmax(0, 1fr); gap: 48px; padding: 56px 48px; }
+  .map-layout { grid-template-columns: 1fr; }
+  .map-sidebar { flex-direction: row; flex-wrap: wrap; }
+  .map-city { flex: 0 0 auto; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 900px) {
+  .wrap { padding: 0 24px; }
+  .hero { padding: 72px 24px 24px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+  .hero-card { border-radius: 16px; margin-top: 0; }
+  .hero-left { padding-bottom: 0; }
+  .reviews-grid { grid-template-columns: 1fr 1fr; }
+  .faq-head { grid-template-columns: 1fr; gap: 16px; }
+  .ff-outer { padding: 48px 32px; }
+  .ff-row { grid-template-columns: 1fr; }
+  .ff-field.full { grid-column: auto; }
+  footer { flex-direction: column; text-align: center; }
+  .topbar { display: none; }
+  .nav { top: 0; }
+  nav .btn-nav { display: none; }
+  .why-sec, .reviews-sec, .map-sec, .faq-sec, .footer-form-sec, .services-sec, .process-sec { padding-left: 24px; padding-right: 24px; }
+  .proof-strip-inner { padding: 0 24px; overflow-x: auto; }
+  .process-steps { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .process-steps::before { display: none; }
+  .promo-strip { padding: 16px 24px; }
+  .promo-strip-inner { gap: 16px; }
+  .promo-sep { display: none; }
+}
+@media (max-width: 640px) {
+  .hero-ctas { flex-direction: column; }
+  .hero-h1 { font-size: 40px; }
+  .hc-row2 { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .why-head, .reviews-head { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .reviews-overall { align-self: flex-start; }
+  .footer-form-sec { padding-left: 16px; padding-right: 16px; }
+  .ff-outer { padding: 24px 12px; gap: 32px; border-radius: 16px; }
+  .ff-left { padding: 0 20px; }
+  .ff-form-card { padding: 36px 32px 32px; border-radius: 16px; }
+  .cta-strip { padding: 24px; }
+  .cta-strip-inner { flex-direction: column; gap: 12px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr; }
+  .promo-strip-inner { flex-direction: column; gap: 10px; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ═══ TOPBAR ═══════════════════════════════════ -->
+<div class="topbar">
+  Licensed &amp; insured &nbsp;·&nbsp; Free 24-hr estimates &nbsp;·&nbsp; Serving Nassau &amp; Suffolk &nbsp;·&nbsp; Call now:
+  <a href="tel:+15165550188">(516) 555-0188</a>
+</div>
+
+<!-- ═══ NAV ══════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo">
+      <img src="logo.png" alt="Demolition Long Island" class="tr-logo-img" width="250" height="150">
+    </div>
+    <div class="nav-phone">
+      <small>Free Estimate — Call Now</small>
+      <a href="tel:+15165550188">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>
+        (516) 555-0188
+      </a>
+    </div>
+    <a class="btn-nav" href="#footer-form-card">Get a Free Quote</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ══════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+
+      <div class="hero-tag">
+        <span class="live-dot"></span>
+        Now Booking · Nassau &amp; Suffolk
+      </div>
+
+      <h1 class="hero-h1" id="hero-headline">
+        Long Island’s Trusted<br>
+        <span class="keyword">Demolition Experts.</span>
+      </h1>
+
+      <p class="hero-sub" id="hero-sub">
+        Residential, commercial, and interior demolition done fast, clean, and safe. Free on-site estimates within 24 hours — licensed, insured, fully bonded.
+      </p>
+
+      <div class="hero-trust">
+        <div class="ht-item">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Licensed &amp; Insured
+        </div>
+        <div class="ht-sep"></div>
+        <div class="ht-item">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          Free Estimates
+        </div>
+        <div class="ht-sep"></div>
+        <div class="ht-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Free Estimates
+        </div>
+        <div class="ht-sep"></div>
+        <div class="ht-item">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Same-Week Start
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#hero-form-card" class="btn-fire">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h4"/></svg>
+          Get a Free Quote
+        </a>
+        <a href="tel:+15165550188" class="btn-ghost-white">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>
+          Call Now
+        </a>
+      </div>
+    </div>
+
+    <!-- HERO FORM -->
+    <div class="hero-card" id="hero-form-card">
+      <div class="hc-eyebrow">Free 24-Hour Estimate</div>
+      <div class="hc-title">Tell us about your project</div>
+
+      <div class="hc-field">
+        <label>Job Address</label>
+        <div class="hc-input-row">
+          <div class="hc-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <input type="text" placeholder="123 Sunrise Hwy, Massapequa NY" id="h-from">
+        </div>
+      </div>
+      <div class="hc-field">
+        <label>Project Type</label>
+        <div class="hc-input-row">
+          <div class="hc-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <input type="text" placeholder="Residential / Commercial / Interior / Pool" id="h-to">
+        </div>
+      </div>
+      <div class="hc-row2">
+        <div class="hc-field">
+          <label>First Name</label>
+          <div class="hc-input-row">
+            <div class="hc-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <input type="text" placeholder="Jane" id="h-firstname">
+          </div>
+        </div>
+        <div class="hc-field">
+          <label>Last Name</label>
+          <div class="hc-input-row">
+            <div class="hc-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <input type="text" placeholder="Doe" id="h-lastname">
+          </div>
+        </div>
+      </div>
+      <div class="hc-row2">
+        <div class="hc-field">
+          <label>Phone Number</label>
+          <div class="hc-input-row">
+            <div class="hc-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg></div>
+            <input type="tel" placeholder="(516) 000-0000" id="h-phone">
+          </div>
+        </div>
+        <div class="hc-field">
+          <label>Email Address</label>
+          <div class="hc-input-row">
+            <div class="hc-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <input type="email" placeholder="jane@email.com" id="h-email">
+          </div>
+        </div>
+      </div>
+      <div class="hc-field">
+        <label>Preferred Start Date</label>
+        <div class="hc-input-row">
+          <div class="hc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <input type="date" id="h-date">
+        </div>
+      </div>
+
+      <button type="button" class="btn-hc-submit" onclick="submitHeroForm()">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Request My Free Estimate
+      </button>
+
+      <p class="hc-note">
+        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        No obligation · No spam · We’ll text or email you within 24 hrs
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROMO BANNER ═════════════════════════════ -->
+<div class="promo-strip">
+  <div class="promo-strip-inner">
+    <div class="promo-item">
+      <span class="promo-badge">5% OFF</span>
+      Permits Pulled — We handle every borough &amp; town
+    </div>
+    <div class="promo-sep"></div>
+    <div class="promo-item">
+      <span class="promo-badge">5% OFF</span>
+      Same-Day Quotes — Call before noon, hear back today
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PROOF STRIP ═══════════════════════════════ -->
+<div class="proof-strip">
+  <div class="proof-strip-inner">
+    <div class="ps-item">
+      <div class="ps-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div>
+        <div class="ps-label">Licensed &amp; Insured</div>
+        <div class="ps-sub">Nassau &amp; Suffolk Counties</div>
+      </div>
+    </div>
+    <div class="ps-item">
+      <div class="ps-icon">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div>
+        <div class="ps-label">Experienced Crews</div>
+        <div class="ps-sub">Heavy equipment, trained operators</div>
+      </div>
+    </div>
+    <div class="ps-item">
+      <div class="ps-icon">
+        <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      </div>
+      <div>
+        <div class="ps-label">Transparent Pricing</div>
+        <div class="ps-sub">Fixed quotes, no hidden fees</div>
+      </div>
+    </div>
+    <div class="ps-item">
+      <div class="ps-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div>
+        <div class="ps-label">Open 7 Days</div>
+        <div class="ps-sub">We answer when you call</div>
+      </div>
+    </div>
+    <div class="ps-item">
+      <div class="ps-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="var(--star)" stroke="none"/></svg>
+      </div>
+      <div>
+        <div class="ps-label">Demolition Specialists</div>
+        <div class="ps-sub">Long Island experts</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA STRIP -->
+<div class="cta-strip dark">
+  <div class="cta-strip-inner">
+    <span class="cta-strip-text">Get a free, on-site demolition quote within 24 hours.</span>
+    <a href="tel:+15165550188" class="cta-strip-btn">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>
+      (516) 555-0188
+    </a>
+  </div>
+</div>
+
+<!-- ═══ WHY US ════════════════════════════════════ -->
+<section class="why-sec">
+  <div class="why-head">
+    <div class="why-head-left">
+      <div class="tag"><svg viewBox="0 0 10 10"><circle cx="5" cy="5" r="5"/></svg>Why Choose Us</div>
+      <h2 class="why-h2">What makes us<br>Long Island’s <em>trusted demolition crew</em></h2>
+    </div>
+    <div class="why-head-right">
+      Every job is handled by our own experienced, in-house crews. No surprises, no hidden fees — just licensed, insured demolition pros who show up on time and leave the site graded clean.
+    </div>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="wc-num">01</div>
+      <div class="wc-icon">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div class="wc-title">Experienced In-House Crews</div>
+      <p class="wc-body">Our crews bring 12+ years of demolition expertise to every job. Trained operators who tear down fast, safely, and leave nothing behind but clean dirt.</p>
+    </div>
+    <div class="why-card">
+      <div class="wc-num">02</div>
+      <div class="wc-icon">
+        <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      </div>
+      <div class="wc-title">Fixed-Price Quotes</div>
+      <p class="wc-body">Affordable and transparent pricing from the first walkthrough. The estimate we give is the price you pay — hauling, dumping, and grading included.</p>
+    </div>
+    <div class="why-card">
+      <div class="wc-num">03</div>
+      <div class="wc-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="wc-title">Fully Insured &amp; Bonded</div>
+      <p class="wc-body">Every demolition is backed by full liability insurance and workers’ comp. Your property and your neighbors are protected from start to finish.</p>
+    </div>
+    <div class="why-card">
+      <div class="wc-num">04</div>
+      <div class="wc-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor" stroke="none"/></svg>
+      </div>
+      <div class="wc-title">Permits &amp; Disposal Handled</div>
+      <p class="wc-body">We proudly offer 5% off for veterans and 5% off for senior citizens. Our way of giving back to those who've given so much.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <span class="cta-strip-text">Ready to tear it down? Call for a free quote today.</span>
+    <a href="tel:+15165550188" class="cta-strip-btn">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>
+      (516) 555-0188
+    </a>
+  </div>
+</div>
+
+<!-- ═══ SERVICES ══════════════════════════════════ -->
+<section class="services-sec">
+  <div class="services-inner">
+    <div class="services-head">
+      <div class="tag"><svg viewBox="0 0 10 10"><circle cx="5" cy="5" r="5"/></svg>Our Services</div>
+      <h2 class="services-h2">Full-service demolition<br>for <em>every project</em></h2>
+      <p class="services-sub">From single-family homes to commercial buildouts — we handle every demolition with the same care, professionalism, and clean-up across Nassau and Suffolk.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="svc-title">Residential Demolition</div>
+        <p class="svc-body">Houses, garages, decks, sheds, and additions. Our crews handle the tear-down, the haul-off, and the final grade so the lot is ready to rebuild.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        </div>
+        <div class="svc-title">Pool Removal</div>
+        <p class="svc-body">In-ground and above-ground pools removed in a day. We backfill, compact, and grade clean so you can reclaim your yard.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div class="svc-title">Commercial Demolition</div>
+        <p class="svc-body">Retail buildouts, warehouses, gas stations, restaurants. Coordinated with your GC, scheduled around your tenants, finished on your timeline.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94L6.73 20.2a2.12 2.12 0 01-3-3l6.74-6.74a6 6 0 017.94-7.94L14.7 6.3z"/></svg>
+        </div>
+        <div class="svc-title">Interior Strip-Out</div>
+        <p class="svc-body">Selective demolition for renovations — kitchens, baths, plaster, flooring, full gut. Site is broom-clean every night.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="svc-title">Concrete &amp; Foundations</div>
+        <p class="svc-body">Driveways, slabs, footings, and full foundations. Saw-cut, broken out, and hauled off cleanly with minimal disruption to surrounding areas.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="svc-title">Permits &amp; Disposal Handled</div>
+        <p class="svc-body">We're proud to offer 5% off for veterans and 5% off for senior citizens. Just let us know when you request your free estimate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip dark">
+  <div class="cta-strip-inner">
+    <span class="cta-strip-text">Need help scoping your demolition? We'll walk you through it.</span>
+    <a href="tel:+15165550188" class="cta-strip-btn">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>
+      (516) 555-0188
+    </a>
+  </div>
+</div>
+
+<!-- ═══ REVIEWS ═══════════════════════════════════ -->
+<section class="reviews-sec">
+  <div class="reviews-head">
+    <div>
+      <div class="tag"><svg viewBox="0 0 10 10"><circle cx="5" cy="5" r="5"/></svg>Reviews</div>
+      <h2 class="reviews-h2">What our clients <em>say</em></h2>
+    </div>
+    <div class="reviews-overall">
+      <div class="rev-big-score">5.0</div>
+      <div class="rev-big-right">
+        <div class="rev-stars-row">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="rev-count">5.0 rating &middot; 80+ Google reviews</div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews-grid">
+    <div class="rev-card">
+      <div class="rev-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="rev-quote">"Took my pool out in one day and graded the yard clean. Crew was on time, polite, and the price was exactly what was quoted. Cleanest demolition outfit on Long Island."</p>
+      <div class="rev-bottom">
+        <div class="rev-av">DR</div>
+        <div>
+          <div class="rev-name">Dana R.</div>
+          <div class="rev-meta">Google Review</div>
+        </div>
+      </div>
+    </div>
+    <div class="rev-card">
+      <div class="rev-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="rev-quote">"Quoted Tuesday, demolished Thursday. They pulled the permit, handled the inspector, and trucked everything off the same day. Hard to find contractors this organized."</p>
+      <div class="rev-bottom">
+        <div class="rev-av">MT</div>
+        <div>
+          <div class="rev-name">Mike T.</div>
+          <div class="rev-meta">Google Review</div>
+        </div>
+      </div>
+    </div>
+    <div class="rev-card">
+      <div class="rev-stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="rev-quote">"Hired them for a full interior gut on our reno. The site was spotless every night, the crew respected my neighbors, and the project finished a day ahead of schedule. Would absolutely hire again."</p>
+      <div class="rev-bottom">
+        <div class="rev-av">LC</div>
+        <div>
+          <div class="rev-name">L. Castellano</div>
+          <div class="rev-meta">Google Review</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip dark">
+  <div class="cta-strip-inner">
+    <span class="cta-strip-text">No hidden fees. No obligations. Just honest demolition pricing.</span>
+    <a href="tel:+15165550188" class="cta-strip-btn">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>
+      (516) 555-0188
+    </a>
+  </div>
+</div>
+
+<!-- ═══ PROCESS ═══════════════════════════════════ -->
+<section class="process-sec">
+  <div class="process-inner">
+    <div class="process-head">
+      <div class="process-tag">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--fire)"><circle cx="5" cy="5" r="5"/></svg>
+        How It Works
+      </div>
+      <h2 class="process-h2">Your tear-down in<br><em>4 simple steps</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="p-step">
+        <div class="p-step-num">1</div>
+        <div class="p-step-title">Request a Quote</div>
+        <p class="p-step-body">Call us or fill out the form. We'll ask a few questions about the project and come walk the site within 24 hours.</p>
+      </div>
+      <div class="p-step">
+        <div class="p-step-num">2</div>
+        <div class="p-step-title">Lock In Your Date</div>
+        <p class="p-step-body">Pick a day that works — we run 7 days a week. We pull every permit and confirm utility shut-offs before crew arrives.</p>
+      </div>
+      <div class="p-step">
+        <div class="p-step-num">3</div>
+        <div class="p-step-title">We Tear It Down</div>
+        <p class="p-step-body">Our crew shows up on time with the right equipment. We demo, separate the materials, load the trucks, and haul it all off.</p>
+      </div>
+      <div class="p-step">
+        <div class="p-step-num">4</div>
+        <div class="p-step-title">Site Left Clean</div>
+        <p class="p-step-body">We grade the lot, sweep the street, and walk the property with you before we leave. Ready for whatever you build next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <span class="cta-strip-text">Step 1 starts with a phone call. Let's go.</span>
+    <a href="tel:+15165550188" class="cta-strip-btn">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>
+      (516) 555-0188
+    </a>
+  </div>
+</div>
+
+<!-- ═══ MAP ═══════════════════════════════════════ -->
+<section class="map-sec">
+  <div class="map-inner">
+    <div class="map-head">
+      <div>
+        <div class="map-tag">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="var(--fire)"><circle cx="5" cy="5" r="5"/></svg>
+          Service Area
+        </div>
+        <h2 class="map-h2">Proudly serving<br><em>all of Long Island</em></h2>
+      </div>
+    </div>
+    <div class="map-layout">
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d400000!2d-73.0!3d40.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div>
+        <div class="map-sidebar-title">Cities we serve</div>
+        <div class="map-sidebar">
+          <div class="map-city"><span class="map-city-dot"></span>Massapequa</div>
+          <div class="map-city"><span class="map-city-dot"></span>Huntington</div>
+          <div class="map-city"><span class="map-city-dot"></span>Garden City</div>
+          <div class="map-city"><span class="map-city-dot"></span>Hempstead</div>
+          <div class="map-city"><span class="map-city-dot"></span>Smithtown</div>
+          <div class="map-city"><span class="map-city-dot"></span>Babylon</div>
+          <div class="map-city"><span class="map-city-dot"></span>Brookhaven</div>
+          <div class="map-city"><span class="map-city-dot"></span>Levittown</div>
+          <div class="map-city"><span class="map-city-dot"></span>Riverhead</div>
+          <div class="map-city"><span class="map-city-dot"></span>Oyster Bay</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <span class="cta-strip-text">Nassau &amp; Suffolk Counties &amp; beyond — call us today.</span>
+    <a href="tel:+15165550188" class="cta-strip-btn">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>
+      (516) 555-0188
+    </a>
+  </div>
+</div>
+
+<!-- ═══ FAQ ═══════════════════════════════════════ -->
+<section class="faq-sec">
+  <div class="faq-inner">
+    <div class="faq-head">
+      <div class="faq-head-left">
+        <div class="tag"><svg viewBox="0 0 10 10"><circle cx="5" cy="5" r="5"/></svg>FAQ</div>
+        <h2 class="faq-h2">Common <em>questions</em><br>answered</h2>
+      </div>
+      <div class="faq-head-right">
+        Still have questions? We're easy to reach.
+        Call us at <a href="tel:+15165550188">(516) 555-0188</a> Open 7 days or
+        <a href="#footer-form-card">request a callback</a>
+        and we'll get back to you shortly.
+      </div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button type="button" class="faq-btn">
+          How does demolition pricing work?
+          <div class="faq-toggle"><svg viewBox="0 0 14 14"><line x1="7" y1="2" x2="7" y2="12"/><line x1="2" y1="7" x2="12" y2="7"/></svg></div>
+        </button>
+        <div class="faq-ans">We walk the site, scope the structure, and give you one fixed price that includes labor, equipment, dumpsters, hauling, and disposal. The number on your quote is the number you pay.</div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-btn">
+          What areas do you serve?
+          <div class="faq-toggle"><svg viewBox="0 0 14 14"><line x1="7" y1="2" x2="7" y2="12"/><line x1="2" y1="7" x2="12" y2="7"/></svg></div>
+        </button>
+        <div class="faq-ans">We serve all of Nassau and Suffolk counties — Massapequa, Huntington, Garden City, Hempstead, Smithtown, Babylon, Brookhaven, Levittown, Riverhead, Oyster Bay, and every town in between.</div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-btn">
+          Are you licensed and insured?
+          <div class="faq-toggle"><svg viewBox="0 0 14 14"><line x1="7" y1="2" x2="7" y2="12"/><line x1="2" y1="7" x2="12" y2="7"/></svg></div>
+        </button>
+        <div class="faq-ans">Yes — fully licensed in Nassau and Suffolk, with $2M general liability and full workers' comp. We can email you a current certificate of insurance before we even walk the site.</div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-btn">
+          How fast can you start?
+          <div class="faq-toggle"><svg viewBox="0 0 14 14"><line x1="7" y1="2" x2="7" y2="12"/><line x1="2" y1="7" x2="12" y2="7"/></svg></div>
+        </button>
+        <div class="faq-ans">Once permits are pulled (typically 5–10 business days, depending on the town), we can usually start within a week. Emergency tear-downs we can mobilize same-week.</div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-btn">
+          Do you handle permits and disposal?
+          <div class="faq-toggle"><svg viewBox="0 0 14 14"><line x1="7" y1="2" x2="7" y2="12"/><line x1="2" y1="7" x2="12" y2="7"/></svg></div>
+        </button>
+        <div class="faq-ans">Yes — we pull every demo permit, file the C of O surrenders, schedule the utility shut-offs, and own the disposal tickets. You sign one quote, we handle the rest.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <span class="cta-strip-text">Still have questions? We'd love to hear from you.</span>
+    <a href="tel:+15165550188" class="cta-strip-btn">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>
+      (516) 555-0188
+    </a>
+  </div>
+</div>
+
+<!-- ═══ FOOTER FORM ════════════════════════════════ -->
+<section class="footer-form-sec">
+  <div class="ff-outer">
+    <div class="ff-left">
+      <div class="ff-eyebrow">Get in touch</div>
+      <h2 class="ff-h2">Ready to plan<br>your <em>tear-down?</em></h2>
+      <p class="ff-body">Fill out the form and we'll reach out shortly with a personalized estimate. No pressure, no obligation.</p>
+      <div class="ff-contact-items">
+        <div class="ff-ci">
+          <div class="ff-ci-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>
+          </div>
+          <div>
+            <div class="ff-ci-label">Phone</div>
+            <div class="ff-ci-val"><a href="tel:+15165550188">(516) 555-0188</a></div>
+          </div>
+        </div>
+        <div class="ff-ci">
+          <div class="ff-ci-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="ff-ci-label">Hours</div>
+            <div class="ff-ci-val">Open 7 days · 7:00 AM – 7:00 PM</div>
+          </div>
+        </div>
+        <div class="ff-ci">
+          <div class="ff-ci-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="ff-ci-label">Service Area</div>
+            <div class="ff-ci-val">All of Nassau &amp; Suffolk · Long Island, NY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ff-right">
+      <div class="ff-form-card" id="footer-form-card">
+        <div class="ff-form-title">Get your free quote</div>
+        <div class="ff-form-sub">Takes 60 seconds — we'll follow up shortly</div>
+        <div class="ff-row">
+          <div class="ff-field full">
+            <label>Job Address</label>
+            <div class="ff-inp-row">
+              <div class="ff-inp-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <input type="text" placeholder="123 Sunrise Hwy, Massapequa NY" id="ff-from"/>
+            </div>
+          </div>
+          <div class="ff-field full">
+            <label>Project Type</label>
+            <div class="ff-inp-row">
+              <div class="ff-inp-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <input type="text" placeholder="Residential / Commercial / Interior / Pool" id="ff-to"/>
+            </div>
+          </div>
+          <div class="ff-field">
+            <label>First Name</label>
+            <div class="ff-inp-row">
+              <div class="ff-inp-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+              <input type="text" placeholder="Jane" id="ff-firstname"/>
+            </div>
+          </div>
+          <div class="ff-field">
+            <label>Last Name</label>
+            <div class="ff-inp-row">
+              <div class="ff-inp-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+              <input type="text" placeholder="Doe" id="ff-lastname"/>
+            </div>
+          </div>
+          <div class="ff-field">
+            <label>Phone Number</label>
+            <div class="ff-inp-row">
+              <div class="ff-inp-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg></div>
+              <input type="tel" placeholder="(516) 000-0000" id="ff-phone"/>
+            </div>
+          </div>
+          <div class="ff-field">
+            <label>Email Address</label>
+            <div class="ff-inp-row">
+              <div class="ff-inp-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <input type="email" placeholder="jane@email.com" id="ff-email"/>
+            </div>
+          </div>
+          <div class="ff-field full">
+            <label>Preferred Start Date</label>
+            <div class="ff-inp-row">
+              <div class="ff-inp-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+              <input type="date" id="ff-date"/>
+            </div>
+          </div>
+          <div class="ff-field full">
+            <button class="btn-ff" type="button" onclick="submitFooterForm()">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Request My Free Estimate
+            </button>
+          </div>
+        </div>
+        <p class="ff-disc">By submitting you agree to be contacted regarding your demolition project. We never sell your information.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════ -->
+<footer>
+  <div>
+    <strong>Demolition Long Island</strong> &nbsp;·&nbsp; Long Island, NY &nbsp;·&nbsp;
+    Demolition Specialists
+  </div>
+  <div>
+    <a href="tel:+15165550188">(516) 555-0188</a>
+    &nbsp;·&nbsp; Open 7 days
+    &nbsp;·&nbsp; &copy; <script>document.currentScript.before(new Text(new Date().getFullYear()))</script> Demolition Long Island
+  </div>
+</footer>
+
+<script>
+// ── PAGE VARIANTS (driven by ?p= param) ──────────────────
+(function(){
+  var pages = {
+    'demolition': {
+      title: "Long Island’s Trusted Demolition Experts | Demolition Long Island",
+      h1: 'Long Island’s Trusted<br><span class="keyword">Demolition Experts.</span>',
+      sub: 'Residential, commercial, and interior demolition done fast, clean, and safe. Free on-site estimates within 24 hours — licensed, insured, fully bonded.'
+    },
+    'residential-demolition': {
+      title: 'Residential Demolition on Long Island | Demolition Long Island',
+      h1: 'Residential<br><span class="keyword">Demolition Experts.</span>',
+      sub: 'Houses, garages, decks, sheds, and additions removed cleanly. Permits pulled, dumpsters handled, lot graded — ready to rebuild on.'
+    },
+    'commercial-demolition': {
+      title: 'Commercial Demolition on Long Island | Demolition Long Island',
+      h1: 'Commercial<br><span class="keyword">Demolition Crews.</span>',
+      sub: 'Retail buildouts, warehouses, gas stations, restaurants. Scheduled around your tenants and your GC, finished on your timeline.'
+    },
+    'pool-removal': {
+      title: 'Pool Removal on Long Island | Demolition Long Island',
+      h1: 'Pool Removal<br><span class="keyword">Done Right.</span>',
+      sub: 'In-ground and above-ground pools removed in a day. Backfilled, compacted, graded clean — reclaim your yard this season.'
+    },
+    'interior-demolition': {
+      title: 'Interior Demolition on Long Island | Demolition Long Island',
+      h1: 'Interior<br><span class="keyword">Strip-Out Crews.</span>',
+      sub: 'Selective demolition for renovations — kitchens, baths, plaster, flooring, full gut. Site broom-clean every night.'
+    }
+  };
+  var p = new URLSearchParams(window.location.search).get('p') || 'demolition';
+  var cfg = pages[p] || pages['demolition'];
+  document.title = cfg.title;
+  document.getElementById('hero-headline').innerHTML = cfg.h1;
+  document.getElementById('hero-sub').textContent = cfg.sub;
+})();
+
+// ── SHARED API SUBMIT (Service1 CRM) ─────────────────────
+// Demolition Long Island's Service1 company ID — set to the real ID in production.
+var SERVICE1_COMPANY_ID = 1;
+var SERVICE1_API_BASE = 'https://account.helloservice1.com';
+
+function submitToService1(data, formEl) {
+  var params = new URLSearchParams(window.location.search);
+
+  var body = {
+    companyId:    SERVICE1_COMPANY_ID,
+    firstName:    data.firstname || '',
+    lastName:     data.lastname || '',
+    email:        data.email || '',
+    phone:        data.phone || '',
+    fromLocation: data.from || '',
+    toLocation:   '',
+    date:         data.date || '',
+    message:      (data.to ? 'Project type: ' + data.to : ''),
+    utmSource:    params.get('utm_source'),
+    utmMedium:    params.get('utm_medium'),
+    utmCampaign:  params.get('utm_campaign'),
+    referrerUrl:  document.referrer || null
+  };
+
+  fetch(SERVICE1_API_BASE + '/api/bookings/quote-request', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  }).catch(function(){});
+
+  var successHTML = '<div class="form-success">' +
+    '<div class="form-success-ring"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>' +
+    '<h3>You\'re all set!</h3>' +
+    '<p>We received your request and will follow up shortly with your personalized estimate.</p>' +
+    '<a href="tel:+15165550188" class="btn-call"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v3z"/></svg>(516) 555-0188</a>' +
+    '</div>';
+  formEl.innerHTML = successHTML;
+}
+
+// ── HERO FORM ─────────────────────────────────────────────
+function submitHeroForm() {
+  var card = document.getElementById('hero-form-card');
+  submitToService1({
+    from:      document.getElementById('h-from').value,
+    to:        document.getElementById('h-to').value,
+    firstname: document.getElementById('h-firstname').value,
+    lastname:  document.getElementById('h-lastname').value,
+    phone:     document.getElementById('h-phone').value,
+    email:     document.getElementById('h-email').value,
+    date:      document.getElementById('h-date').value
+  }, card);
+}
+
+// ── FOOTER FORM ───────────────────────────────────────────
+function submitFooterForm() {
+  var card = document.getElementById('footer-form-card');
+  submitToService1({
+    from:      document.getElementById('ff-from').value,
+    to:        document.getElementById('ff-to').value,
+    firstname: document.getElementById('ff-firstname').value,
+    lastname:  document.getElementById('ff-lastname').value,
+    phone:     document.getElementById('ff-phone').value,
+    email:     document.getElementById('ff-email').value,
+    date:      document.getElementById('ff-date').value
+  }, card);
+}
+
+// ── FAQ accordion ──
+document.querySelectorAll('.faq-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var item = btn.closest('.faq-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(fi){
+      fi.classList.remove('open');
+    });
+    if(!wasOpen) item.classList.add('open');
+  });
+});
+
+</script>
+</body>
+</html>
